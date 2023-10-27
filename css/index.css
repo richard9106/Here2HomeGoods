@@ -212,7 +212,7 @@ figure{
     margin: 0 auto;
     width: 100%;
     height: 600px;
-    background-image: url(/img/BACKGROUND/family-wel.jpg);
+    background-image: url(../img/BACKGROUND/family-wel.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
@@ -372,7 +372,7 @@ figure{
     border-radius: 0 0 20px 0;
     box-shadow: 5px 5px 3px 3px var(--secundario) ;
     align-items: center;
-    background-image: url(./img/BACKGROUND/fondo1.png);
+    background-image: url(../img/BACKGROUND/fondo1.png);
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: -200px -100px;
@@ -400,7 +400,7 @@ figure{
         margin: 0 auto;
         max-width: 100%;
         height: 300px;
-        background-image: url(./img/flow/reciving\ packeg2.jpg);
+        background-image: url(../img/flow/reciving\ packeg2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
