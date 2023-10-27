@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Normalize the content on every boswer-->
+    <link rel="preload" href="css/normalize.css" as="style"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+
+
+<!--Style Sheet -->
+    <link rel="preload" href="css/index.css" as="style"/>
+    <link rel="stylesheet" href="css/index.css"/>
+<!--select country-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    
+
+    <title>Here2HomeGoods</title>
+</head>
+<body>
+    <div class="container-nav " id="Home">
+        <figure>
+            <a href="/index.html"><img src="/img/logos/11.png" alt="company logo"></a>
+        </figure>
+        <nav class="nav">
+            <img class="img-menu" src="/img/flow/menu.png" alt="Menu" onmouseenter="muestra()" >
+            <ul id="menu" onmouseleave="oculta()">
+                <li> <a href="#Home" onclick="oculta()">Home</a></li>
+                <li> <a href="#abouthUs" onclick="oculta()">About Us</a></li>
+                <li> <a href="#Products" onclick="oculta()" >Products</a></li>
+                <li><a href="#formInfo" onclick="oculta()">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="section-one">
+
+       <!--IF YOU WANT CHANGE THE TEXT JUST DELET THE TEXT IN COLOR WHITE AND WRITE
+    A NEW ONE-->
+        <h2> <span class="big_text_header" style="color:#F1A2A2; font-size:6rem;">Here2</span><span class="big_text_header style="font-size:6rem;">Home Goods</span></br>
+            <span class="small_text_header" style="font-weight:100; font-size: 0.7em; text-shadow: none; color: black;">Quality products from our home to yours</span></h2>
+    </section>
+
+    <!--HERE YOU CANT CHANGE THE TEXT OF ABOUTH US
+    IF YOU WANT CHANGE THE TEXT JUST DELET THE TEXT IN COLOR WHITE AND WRITE
+    A NEW ONE-->
+
+    <article class="abouth-us" id="abouthUs">
+        <div class="abouth-us-text">
+            <h3>Abouth Us</h3>
+            <!--TEXT1-->
+            <p>
+                Here2Home Goods is a family-run business that is dedicated to supplying high quality products to our clients. We build fruitful relationships with our trusted vendors to streamline getting you and your family the goods that you need in a timely manner. 
+            <br>
+            <br>
+                When buying from us, you can be assured that the items you bring into your home are coming directly from the warehouses of brands that we know and love. 
+            </p>
+           
+        </div>
+        <div class="abouth-us-img-container">
+            <img src="/img/flow/working2.jpg" alt="image working">
+        </div>
+    </article>
+
+
+
+    <section class="section-two" id="Products">
+
+       <div class="section-two-container"> 
+
+            <div class="section-two-img">
+                <img src="/img/flow/givin.jpg" alt="gif image">
+            </div>
+
+            <div class="section-two-text">
+                <!--IF YOU WANT CHANGE THE TEXT JUST DELET THE TEXT IN COLOR WHITE AND WRITE
+                A NEW ONE-->
+                <h3>What Do We Offer?</h3>
+                <!--IF YOU WANT CHANGE THE TEXT JUST DELET THE TEXT IN COLOR WHITE AND WRITE
+                A NEW ONE-->
+                <ul>
+                    <li>Kitchen appliances</li>
+                    <li> <strong style="color:#518F77;">Home</strong> and office decor</li>
+                    <li>Health & <strong style="color:#518F77;">wellness products</strong></li>
+                    <li><strong style="color:#518F77;">Essential</strong> electronics</li>
+                    <li>Family games and Toys </li>
+
+                </ul>
+            </div>    
+        </div>
+    </section>
+
+    <aside class="message">
+        <div>
+            <!--IF YOU WANT CHANGE THE TEXT JUST DELET THE TEXT IN COLOR WHITE AND WRITE
+            A NEW ONE-->
+            <h3>
+                The possibility of realizing a dream is what makes life interesting
+            </h3>
+        </div>
+        <div>
+            <img src="/img/flow/reciving packeg2.jpg" alt="">
+        </div>
+       
+            
+    </aside>
+        
+           
+                <form  class="form-container" id="formInfo" action="/php/send-email.php" method="post">
+                    <div id="for" class="for">
+                        <h3>Contact Us</h3>
+                        
+                        <div id="nm">
+                            <label>Name</label>
+                            <input type="text" id="name1" name="name" placeholder="Name or company Name" onblur="verificaNombre()" />
+                        </div>
+                        <div id="em">
+                            <label>E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="my email@mail.com" onblur="verificaEm()"  />
+                        </div>
+                        <div id="phn">
+                            <label>Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="###- ###-####" onblur="verificaTel()" />
+                        </div>
+                        <div id="msg">
+                            <label>How can i help you?</label>
+                            <textarea type="text" id="message" name="message"
+                            rows="5" 
+                            placeholder="Description" onblur="verificaMesage()" ></textarea>
+                        </div>
+                           
+                        <div id="pl">
+                                <a href="/privacy.html">Privacy Policy</a>
+                                <input type="checkbox" id="privacity" name="privacidad" required >
+                        </div>
+                        <div>
+                            <input class="btn" id="btn-send" type="submit" value="Send"/>
+                            <input class="btn"  id="btn-clear" type="reset"value="Clear"/>
+                        </div>
+                    </div>   
+                   
+                </form> 
+           
+                
+    <div>
+        <footer>
+
+            <p>
+                Subject to terms and <a href="/privacy.html" style="text-decoration:underline; color:black; font-weight:500 ">privacy policy.</a>
+                <br>
+                For more information contact the email:
+            </p>
+        </footer>
+
+        <div class="footer-text">
+
+
+        </div>
+    </div>
+
+    <script src="/jquery/Jquery.js"></script>
+    <script src="/jquery/formValidation.js"></script>
+    <script src="/jquery/scroll.js"></script>
+    <script src="/jquery/navFix.js"></script>
+    <script src="/jquery/openMenu.js"></script>
+
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+      </script>
+</body>
+</html>

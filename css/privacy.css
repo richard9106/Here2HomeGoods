@@ -1,0 +1,192 @@
+:root {
+    --primario: #52414C;
+    --secundario:#518F77;
+    --detail:#F1A2A2;
+    --detail-claro:#f2bfbf;
+    --detail2:#FFBC42;
+    --detail3:#B45012;
+    --gris:#56636f; 
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    padding: 0;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/*GLOBALS*/
+h1, h2, h3, h4 {
+    font-family:'sub-titles';
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+p{
+    font-family: 'parrafo';
+}
+
+img {
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    font-family:'parrafo-specila';
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    font-family: 'parrafo';
+}
+figure{
+    margin: 0;
+}
+
+/*FONTS*/
+
+@font-face {
+    font-family:'titles';
+    src: url(/fonts/Simonetta/Simonetta-Italic.ttf);
+}
+@font-face {
+    font-family:'parrafo';
+    src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family:'sub-titles';
+    src: url(/fonts/Cinzel/static/Cinzel.ttf);
+}
+
+/*utilities*/
+.green-text{
+    color: var(--secundario);
+}
+
+.btn{
+    margin: 10px;
+    width: 100px;
+    background-color: var(--detail-claro);
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--detail2);
+    transform: scale(1.2);
+}
+
+/*show nav scroll*/
+  
+  .scroll-down{
+    transform: translate3d(0, -100%, 0);
+  }
+   
+   .scroll-up {
+    position: fixed;
+    transform: none;
+    background: var(--blanco);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  } 
+/*Navegatoin and logo*/
+
+ .container-nav{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+} 
+    .container-nav figure{
+        width: 100px;
+        height: 100px;
+    }
+        .container-nav figure a img{
+           width:100px;
+        }
+
+/* Navegation Menu*/
+
+.nav{
+    text-align: right;
+   
+}
+    .img-menu{
+        display: none;
+    }
+
+    .nav ul{
+        display: flex;
+        justify-content: right;
+    }
+        .nav a{
+            margin: 0 10px;
+            color: var(--primario);
+            background-image: linear-gradient(currentColor, var(--secundario));
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+            font-size: 1.3em;
+            
+        }
+        .nav a:hover{
+            background-size: 100% 2px;
+        }
+/*Responsive mode Navegation*/
+@media (max-width: 480px) {
+    .container-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+   
+}
+
+.title-pp{
+    text-align: center;
+}
+.text-pp{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+    footer p{
+        margin: 0 auto;
+        width: 50%;
+        font-family: 'titles';
+        text-align: center;
+    }
